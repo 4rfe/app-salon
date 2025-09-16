@@ -21,7 +21,7 @@ class Email{
         $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = $_ENV["EMAIL_host"];
-        $mail->SMTPAuth = $_ENV["EMAIL_SMTPAuth"];
+        $mail->SMTPAuth = true;
         $mail->Port = $_ENV["EMAIL_Port"];
         $mail->Username = $_ENV["EMAIL_Username"];
         $mail->Password = $_ENV["EMAIL_Password"];
@@ -52,7 +52,7 @@ class Email{
         $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = $_ENV["EMAIL_host"];
-        $mail->SMTPAuth = $_ENV["EMAIL_SMTPAuth"];
+        $mail->SMTPAuth = true;
         $mail->Port = $_ENV["EMAIL_Port"];
         $mail->Username = $_ENV["EMAIL_Username"];
         $mail->Password = $_ENV["EMAIL_Password"];
