@@ -3,8 +3,8 @@
 use Dotenv\Dotenv;
 
 require __DIR__ . '/../vendor/autoload.php';
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->safeload();
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
 require 'funciones.php';
 require 'database.php';
 
