@@ -1,7 +1,13 @@
 <?php
  
 
-$db = mysqli_connect($_ENV["BD_Host"], $_ENV["BD_User"], $_ENV["BD_Password"], $_ENV["BD_Name"], $_ENV["BD_Port"]);
+$db = mysqli_connect(
+    $_ENV["MYSQL_HOST"],
+    $_ENV["MYSQL_USER"],
+    $_ENV["MYSQL_PASSWORD"],
+    $_ENV["MYSQL_DATABASE"],
+    $_ENV["MYSQL_PORT"]
+);
 
 $db->set_charset("utf8");
 
