@@ -1,7 +1,7 @@
 <?php
  
 
-$db = mysqli_connect($_ENV["BD_Host"], $_ENV["BD_User"], $_ENV["BD_Password"], $_ENV["BD_Name"]);
+$db = mysqli_connect($_ENV["BD_Host"], $_ENV["BD_User"], $_ENV["BD_Password"], $_ENV["BD_Name"], 33);
 
 $db->set_charset("utf8");
 
